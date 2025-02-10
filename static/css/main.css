@@ -1,0 +1,163 @@
+:root {
+    --light: red;
+    --blue: rgb(24, 162, 216);
+    --dark: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+
+body {
+    background-color: var(--blue);
+    background-image: url(../img/bg.jpg);
+
+    background-size: cover;
+    position: relative;
+}
+
+.slide-container {
+    max-width: 1280px;
+    min-height: auto;
+    min-width: auto;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: var(--dark);
+    background-color: var(--blue);
+    padding: 16px 32px;
+}
+
+.sklenik {
+    color: black;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sklenik-img {
+    height: 100px;
+    width: 100px;
+}
+
+.slide {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 300px;
+  max-width: 500px;
+}
+
+.slide-right {
+  animation: 1s slide 0.25s forwards;
+  transform: translateX(-320%);
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.menu {
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+}
+
+main {    
+    min-height: min-content;
+    min-width: min-content;
+    max-width: 900px;
+
+    position: relative;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 140px;
+    
+    z-index: 1;
+}
+
+.footer {
+    min-height: auto;
+    min-width: auto;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    z-index: -1;
+
+    background-color: var(--dark);
+
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+    gap: 10px 10px;
+
+    border-top: solid var(--blue);
+    border-width: 5px;
+}
+
+.footer > a {
+    color: white;
+    font-weight: 600;
+}
+
+.footer-subcontainer {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px 10px;
+}
+
+.footer-subcontainer > a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-style: none;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.footer-subcontainer > a:nth-child(1) {
+    background-color: black;
+}
+
+.footer-subcontainer a > img {
+    height: 40px;
+    width: 40px;
+}

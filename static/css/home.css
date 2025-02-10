@@ -1,0 +1,66 @@
+:root {
+  --light: #15151a;
+  --blue: rgb(24, 162, 216);
+  --border_rad_px: 12px;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.35fr 0.15fr 0.5fr;
+
+  gap: 10px 10px;
+
+  grid-template-areas:
+    "home-Header_1"
+    "."
+    "home-intro-text";
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  background-color: var(--blue);
+
+  color: var(--light);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 200%;
+
+  padding-left: 40px;
+
+  border-radius: var(--border_rad_px);
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: var(--light);
+
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: start;
+
+  border-radius: var(--border_rad_px);
+  border-style: solid;
+  border-color: var(--blue);
+}
+
+.home-text > p {
+  margin: 0px 20px 0px 20px;
+  font-size: large;
+}
+
+.home-quote {
+  font-size: medium;
+  margin: 0px 10px 0px 10px;
+  padding-left: 60px;
+}
