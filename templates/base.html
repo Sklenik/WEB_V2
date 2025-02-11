@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- bare necessities /-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bare necessities /-->
+
+    <!-- Icon -->
+    <link rel="icon" href="../static/img/sklenikLogo.png" type="image/icon type">
+    <!-- Icon -->
+
+    <!-- CSS /-->
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+    <!-- CSS /-->
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+    <nav>
+        <div class="slide-container">
+            <div class="slide-right">
+                <div class="sklenik">
+                    <div class="text-and-logo">
+                        <div class="sklenik-text">
+                            <p>sklenik</p>
+                            <p>se mnou vaše IT roste</p>
+                        </div>
+                        <img class="sklenik-img" src="../static/img/sklenikLogo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page content /-->
+    <main>
+        <div class="main-div">{% block content %} {% endblock %}</div>
+    </main>
+    <!-- page content /-->
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:filip1904@seznam.cz">filip1904@seznam.cz</a>
+
+        <div class="footer-subcontainer">
+            <a href="https://github.com/Sklenik">
+                <img class="footer-github" src="../static/img/GitHub-Mark-Light-120px-plus.png" />
+            </a>
+        </div>
+
+        <div>© Copyright 2025 Filip Sklenář</div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
