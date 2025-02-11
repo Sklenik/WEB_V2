@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block title %} Home {% endblock %} {% block
 content%}
 <div class="home-container">
-  <div class="home-header">Ahoj, já jsem Filip.</div>
+  <div class="home-header">Pár slov o mě</div>
   <div class="home-text">
     <p>
       Jsem nadšený programátor, který se rád chopí každé zajímavé výzvy. Rád se učím nové věci a ještě raději je zkouším
@@ -10,7 +10,7 @@ content%}
     <p>
       Aktuálně jsem třetím rokem Microsoft Dynamics Business Central & Microsoft Dynamics NAV vývojář a analytik. Mám
       pestré zkušenosti nejen s vývojem úprav zmíněných systémů, ale i se samotným návrhem a následnou analýzou
-      zákazníkových požadavků.
+      požadavků zákazníka.
     </p>
     <p>
       Za svou dosavadní "kariéru" jsem navrhl a vyvinul nespočet zákaznických úprav od jednoduchého přidávání polí, přes
@@ -18,56 +18,81 @@ content%}
       Slovenská pošta, Balíkobot) nebo eshopů. Na denní bázi jsem zvyklý řešit nejen vývoj, ale i zákaznickou podporu.
     </p>
   </div>
+</div>
 
+<div class="home-container">
   <div class="home-header">Dosažené vzdělání a certifikace</div>
   <div class="home-text">
     <p>
-      Květen 2020 - Obchodní Akademie Vinohradská - studium zakončeno maturitou z Ekonomiky, Účetnictví, Biologie,
-      Českého a Anglického jazyka
+      Květen 2020 - Obchodní Akademie Vinohradská - maturita
     </p>
     <p>
-      Květen 2021 - MAVO Jazyková škola - obdržen certifikát AJ úrovně B2
+      Květen 2021 - MAVO Jazyková škola - certifikát AJ B2
     </p>
-    <p>
-      Červen 2021 - MAVO Jazyková škola - obdržen CAE certifikát AJ úrovně C2
-    </p>
+    <!---->
+    <div class="home-text-container">
+      <p>
+        Červen 2021 - Cambridge CAE certifikát AJ C1
+      </p>
+      <a href="../static/pdf/statementOfResult.pdf" target="_blank">
+        <img style="height: 200px; width: auto;" class="home-img" src="../static/img/cambridge.svg" alt="CAE">
+      </a>
+    </div>
+    <!---->
+    <div class="home-text-container">
+      <p>
+        Září 2024 - Microsoft Dynamics 365 Business Central Developer Associate (MB820)
+      </p>
+      <a
+        href="https://learn.microsoft.com/api/credentials/share/en-us/sklenik/AB3BD404F73565D?sharingId=EC1C69BB69D54285">
+        <img style="height: 100px; width: auto;" class="home-img"
+          src="../static/img/microsoft-certified-associate-badge.svg" alt="MB820">
+      </a>
+    </div>
   </div>
+</div>
 
+<div class="home-container">
   <div class="home-header">Zkušenosti</div>
   <div class="home-text">
     <p>
       AL & C/AL - medior (3 roky)
     </p>
-    <li class="home-quote">Technická analýza zákaznických úprav</li>
-    <li class="home-quote">Znalost a orientace v baseapp kódu</li>
-    <li class="home-quote">Vývoj a debug kódu v prostředí NAV Development Environment</li>
-    <li class="home-quote">Vývoj a debug kódu v prostředí Visual Studio Code</li>
-    <li class="home-quote">Vývoj & úpravy existujících tabulek, pagí, reportů</li>
-    <li class="home-quote">Vývoj, úpravy a design sestav ve formátech RDLC a Word</li>
-    <li class="home-quote">Integrace a dovednost debugovat napojení Business Central na externí API (přepravci, eshopy)
-    </li>
-    <li class="home-quote">Import, zpracování a export XLM a Excel (.xlsx, .xlsm, .csv) souborů v rámci Business
-      Central
-    <li class="home-quote">Migrace systémů Dynamics Business Central OnPrem do Cloudu</li>
-    <li class="home-quote">Nasazování úprav do prostředí NAV, Business Central OnPrem & Cloud</li>
+    <ul class="home-list">
+      <li>Technická analýza zákaznických úprav</li>
+      <li>Znalost a orientace v baseapp kódu</li>
+      <li>Vývoj a debug kódu v prostředí NAV Development Environment</li>
+      <li>Vývoj a debug kódu v prostředí Visual Studio Code</li>
+      <li>Vývoj & úpravy existujících tabulek, pagí, reportů</li>
+      <li>Vývoj, úpravy a design sestav ve formátech RDLC a Word</li>
+      <li>Integrace a dovednost debugovat napojení Business Central na externí API (přepravci,
+        eshopy)
+      </li>
+      <li>Import, zpracování a export XLM a Excel (.xlsx, .xlsm, .csv) souborů v rámci Business
+        Central
+      <li>Migrace systémů Dynamics Business Central OnPrem do Cloudu</li>
+      <li>Nasazování úprav do prostředí NAV, Business Central OnPrem & Cloud</li>
+    </ul>
 
     <p>
       Další programovací jazyky
     </p>
-    <li class="home-quote">SQL - dovednost dát dohromady jednodušší inspecty</li>
-    <li class="home-quote">Python - základní znalost, dovednost sepsat jednoduché scripty</li>
-    <li class="home-quote">HTLM & CSS - základní znalost, dovednost dát dohromady jednodušší webové stránky</li>
+    <ul class="home-list">
+      <li>SQL - dovednost dát dohromady jednodušší inspecty</li>
+      <li>Python - základní znalost, dovednost sepsat jednoduché scripty</li>
+      <li>HTLM & CSS - základní znalost, dovednost dát dohromady jednodušší webové stránky</li>
+    </ul>
 
     <p>
       Další IT dovednosti
     </p>
-    <li class="home-quote">Znalost a práce s gitem na denní bázi</li>
-    <li class="home-quote">Znalost a dovednost práce s verzováním kódu v prostředí Azure Devops</li>
-    <li class="home-quote">Znalost a dovednost práce s verzováním kódu v prostředí github</li>
-    <li class="home-quote">Znalost a dovednost práce s prostředím postman k testování API</li>
+    <ul class="home-list">
+      <li>Znalost práce s gitem</li>
+      <li>Znalost práce s verzováním kódu v prostředí Azure Devops</li>
+      <li>Znalost práce s verzováním kódu v prostředí github</li>
+      <li>Znalost práce s prostředím postman k testování API</li>
+      <li>Základní znalost práce s Visual Studio 2022 a základní znalost vývoje v C++</li>
+    </ul>
   </div>
-</div>
-
-
 </div>
 {% endblock %}

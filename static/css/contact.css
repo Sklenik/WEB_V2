@@ -1,0 +1,88 @@
+:root {
+  --primary: white;
+  --light: #15151a;
+  --dark: rgb(24, 162, 216);
+  --border_rad_px: 12px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr;
+
+  gap: 10px 10px;
+  margin: 0 200px 0 200px;
+  padding-bottom: 10px;
+
+  border-bottom: 3px solid var(--dark);
+  border-radius: 0 0 12px 12px;
+
+  grid-template-areas:
+    "contact-header"
+    "contact-subcontainer";
+}
+
+.contact-header {
+  grid-area: contact-header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: var(--dark);
+
+  color: var(--light);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 250%;
+
+  border-radius: 12px 12px 0 0;
+}
+
+.contact-subcontainer {
+  grid-area: contact-subcontainer;
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 10px 10px;
+}
+
+.contact-subc-item > img {
+  height: 60px;
+  width: 60px;
+
+  padding: 5px;
+
+  background-color: var(--dark);
+}
+
+.contact-subc-item:nth-child(5) > img {
+  padding: 0px;
+}
+
+.contact-subc-item > p {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.contact-subc-item {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px 10px;
+}
+
+.contact-subc-item > a {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: x-large;
+}

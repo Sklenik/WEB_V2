@@ -1,6 +1,6 @@
 :root {
-    --light: red;
-    --blue: rgb(24, 162, 216);
+    /* --blue: rgb(24, 162, 216); */
+    --blue: rgb(92,172,245);
     --dark: black;
 }
 
@@ -13,9 +13,6 @@
 
 body {
     background-color: var(--blue);
-    background-image: url(../img/bg.jpg);
-
-    background-size: cover;
     position: relative;
 }
 
@@ -41,17 +38,42 @@ nav {
     padding: 16px 32px;
 }
 
+.text-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sklenik-text {
+    display: grid;
+    align-items: center;
+}
+
+/*TODO vyresit sklenik-text - zarovnat nejak hezky*/
+
+.sklenik-text :first-child {
+    align-content: start;
+}
+
+.sklenik-text :last-child {
+    text-transform: none;
+    font-weight: 400;
+    font-size: 12px;
+    align-self: flex-end;
+}
+
 .sklenik {
     color: black;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .sklenik-img {
+    padding-left: 20px;
     height: 100px;
-    width: 100px;
+    width: fit-content;
 }
 
 .slide {
@@ -85,6 +107,15 @@ nav {
 }
 
 main {    
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    border-bottom: solid var(--blue);
+    border-width: 5px;
+}
+
+.main-div {
     min-height: min-content;
     min-width: min-content;
     max-width: 900px;
@@ -94,7 +125,7 @@ main {
     padding-top: 200px;
     padding-bottom: 140px;
     
-    z-index: 1;
+    z-index: 3;
 }
 
 .footer {
@@ -113,7 +144,7 @@ main {
     left: 0;
     width: 100%;
     padding: 60px;
-    z-index: -1;
+    z-index: 1;
 
     background-color: var(--dark);
 
@@ -122,9 +153,6 @@ main {
     text-decoration: none;
 
     gap: 10px 10px;
-
-    border-top: solid var(--blue);
-    border-width: 5px;
 }
 
 .footer > a {

@@ -8,7 +8,7 @@
     <!-- bare necessities /-->
 
     <!-- Icon -->
-    <link rel="icon" href="../static/img/Keetongu.png" type="image/icon type">
+    <link rel="icon" href="../static/img/sklenikLogo.png" type="image/icon type">
     <!-- Icon -->
 
     <!-- CSS /-->
@@ -23,13 +23,23 @@
     <nav>
         <div class="slide-container">
             <div class="slide-right">
-                <div class="sklenik">sklenik</div>
+                <div class="sklenik">
+                    <div class="text-and-logo">
+                        <div class="sklenik-text">
+                            <p>sklenik</p>
+                            <p>se mnou vaše IT roste</p>
+                        </div>
+                        <img class="sklenik-img" src="../static/img/sklenikLogo.png">
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- page content /-->
-    <main>{% block content %} {% endblock %}</main>
+    <main>
+        <div class="main-div">{% block content %} {% endblock %}</div>
+    </main>
     <!-- page content /-->
 
     <!-- footer -->
