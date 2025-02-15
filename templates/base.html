@@ -27,7 +27,13 @@
                     <div class="text-and-logo">
                         <div class="sklenik-text">
                             <p>filip sklenář</p>
-                            <p>se mnou vaše IT roste</p>
+                            <p>
+                                {% if lang == "cz" %}
+                                se mnou vaše IT roste
+                                {% elif lang == "en" %}
+                                with me, your IT grows
+                                {% endif %}
+                            </p>
                         </div>
                         <img class="sklenik-img" src="../static/img/sklenikLogo.png">
                     </div>
